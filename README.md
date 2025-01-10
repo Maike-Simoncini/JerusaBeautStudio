@@ -1,6 +1,6 @@
-# Projeto de Busca "Plantas Medicinais"
+# Salão de Beleza Jerusa Beaut Studio
 
-<a><img width="80%" src="img/tela.png"></a>
+<a><img width="100%" src="images/tela.png"></a>
 
 **Descrição**
 
@@ -13,4 +13,4 @@ Projeto simples de uma página para salão de beleza.
 
 **Link do projeto**
 
-https://maike-simoncini.github.io/Plantas-Medicinais/
+https://maike-simoncini.github.io/JerusaBeautStudio/
