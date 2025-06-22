@@ -1,170 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JerusaBeautStudio</title>
+    <title>Jerusa Beauty Studio</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b9069eae33.js" crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body id="l1">
-    <section id="navbar">
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logojbs.png" alt="">
-                </a>
-            </div>
-            <div class="nav-list">
-                <ul class="nav-menu">
-                    <li class="navlink"><a href="#l1">Início</a></li>
-                    <hr>
-                    <li class="navlink"><a href="#l3">Serviços</a></li>
-                    <hr>
-                    <li class="navlink"><a href="#l2">Contato</a></li>
+
+<!-- Navbar -->
+<section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#l1">Jerusa Beauty Studio</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-pink" href="#l1">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-pink" href="#l3">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link text-pink" href="#l2">Contato</a></li>
                 </ul>
             </div>
-            <div class="button-nav navlink nav-menu"><a href="https://wa.me/35999892834" target="_blank">
-                    <button class="navlink">
-                        <span>35 9 9989 2834</span>
-                    </button></a>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </section>
-
-    <section id="section-1">
-        <div class="s1-content">
-            <div class="s1-text">
-                <h2>Transformando vidas, uma beleza de cada vez.</h2>
-                <p>Jerusa Beauty Studio.
-            </div>
-            <div class="s1-image">
-                <img src="images/jerusa.png" alt="">
+            <div class="d-none d-lg-block">
+                <a href="https://wa.me/35999892834"  target="_blank" class="btn btn-pink">
+                    35 9 9989 2834
+                </a>
             </div>
         </div>
-    </section>
+    </nav>
+</section>
 
-    <section id="section-3">
-        <div id="l3">
-            <div class="mt s3-h3">
-                <h3>Serviços</h3>
-            </div>
-            <hr class="hr">
-            <div class="s3-content">
-                <div class="s3-h2">
-                    <h2>Veja nossos serviços.</h2>
-                </div>
-            </div>
+<!-- Seção Inicial -->
+<section id="l1" class="py-5 section-padding">
+    <div class="container mt-5 text-center">
+        <h2 class="mb-3">Transformando vidas, <span class="highlight">uma beleza de cada vez.</span></h2>
+        <p class="lead mb-4">Especialista em Maquiagem, Penteados e Design de Sobrancelhas</p>
+        <div class="s1-image mx-auto mt-4">
+            <img src="images/jerusa.png" alt="Jerusa Beauty Studio" class="img-fluid rounded-circle border border-pink shadow"
+                 loading="lazy">
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="section-4" class="mt">
-        <div class="s4-fe s4-img reveal">
-            <div>
-                <h2 class="s4-2h"></h2>
+<!-- Serviços -->
+<section id="l3" class="py-5 bg-light section-padding">
+    <div class="container text-center">
+        <h3 class="s3-h3 mb-4">Serviços</h3>
+        <hr class="mx-auto w-25 mb-4">
+        <div class="row justify-content-center g-4">
+            <div class="col-md-4 s4-img reveal text-center p-4 rounded shadow-sm">
+                <h2 class="s4-2h2">Maquiagem</h2>
+                <p>Especializações em makes naturais, noivas e eventos.</p>
             </div>
-            <div>
-                <h2 class="s4-2h2">
-                    Maquiagem
-                </h2>
-            </div>
-        </div>
-        <div class="s4-te s4-img reveal">
-            <div>
-                <h2 class="s4-2h"></h2>
-            </div>
-            <div>
+            <div class="col-md-4 s4-img reveal text-center p-4 rounded shadow-sm">
                 <h2 class="s4-2h2">Penteados</h2>
+                <p>Criamos penteados exclusivos para todos os tipos de ocasião.</p>
+            </div>
+            <div class="col-md-4 s4-img reveal text-center p-4 rounded shadow-sm">
+                <h2 class="s4-2h2">Design de Sobrancelhas</h2>
+                <p>Modelagem precisa e perfeita para realçar seu olhar.</p>
             </div>
         </div>
-        <div class="s4-the s4-img reveal">
-            <div>
-                <h2 class="s4-2h"></h2>
-            </div>
-            <div>
-                <h2 class="s4-2h2">Design</h2>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="mt" id="l2">
-        <div class="row">
-            <div class="col-lg-4 col-sm-6">
-
+<!-- Rodapé -->
+<footer id="l2" class="py-5 bg-white text-dark border-top section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start">
+                &copy; Jerusa Beauty Studio.
             </div>
-            <div class="col-lg-4 col-sm-6 footer-s2">
-                <h2>&copy Jerusa Beauty Studio.</h2>
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <h2 class="fs-5">jerusabeauty.studio</h2>
             </div>
-            <div class="col-lg-4 col-sm-6 footer-s3">
-                <div class="svg">
-                    
-                    
-                    <svg width="42" height="36" viewBox="0 0 42 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <a href=mailto:jerusinhaz@gmail.com target="_blank">   
-                            <path
-                                d="M8.71115 7.67923C8.2463 7.42893 7.68408 7.44143 7.23082 7.71217C6.77756 7.9829 6.5 8.47198 6.5 8.99994V27.9999C6.5 28.8284 7.17157 29.4999 8 29.4999C8.82843 29.4999 9.5 28.8284 9.5 27.9999V11.5113L20.2888 17.3206C20.7328 17.5597 21.2672 17.5597 21.7112 17.3206L32.5 11.5113V27.9999C32.5 28.8284 33.1716 29.4999 34 29.4999C34.8284 29.4999 35.5 28.8284 35.5 27.9999V8.99994C35.5 8.47198 35.2224 7.9829 34.7692 7.71217C34.3159 7.44143 33.7537 7.42893 33.2888 7.67923L21 14.2963L8.71115 7.67923Z"
-                                fill="#F9F9F9" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M31.6212 1.44361C24.5545 0.811766 17.4455 0.811766 10.3789 1.44361L7.34417 1.71495C4.08894 2.006 1.4588 4.49285 0.986012 7.72668C-0.00998586 14.5393 -0.00998574 21.4606 0.986012 28.2732C1.4588 31.507 4.08894 33.9939 7.34417 34.2849L10.3789 34.5563C17.4455 35.1881 24.5545 35.1881 31.6212 34.5563L34.6559 34.2849C37.9111 33.9939 40.5412 31.507 41.014 28.2732C42.01 21.4606 42.01 14.5393 41.014 7.72668C40.5412 4.49284 37.9111 2.006 34.6559 1.71495L31.6212 1.44361ZM10.646 4.43169C17.5349 3.81574 24.4651 3.81574 31.354 4.43169L34.3887 4.70303C36.2609 4.87043 37.7737 6.30073 38.0456 8.16066C38.9995 14.6855 38.9995 21.3144 38.0456 27.8392C37.7737 29.6991 36.2609 31.1294 34.3887 31.2968L31.354 31.5682C24.4651 32.1841 17.5349 32.1841 10.646 31.5682L7.61134 31.2968C5.7391 31.1294 4.22638 29.6991 3.95446 27.8392C3.00053 21.3144 3.00053 14.6855 3.95446 8.16066C4.22638 6.30073 5.7391 4.87043 7.61134 4.70303L10.646 4.43169Z"
-                                fill="#F9F9F9" />
-                        </a>
-                    </svg>
-
-                    
-
-                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <a href="https://www.instagram.com/jerusamake?utm_source=qr&igsh=eDRhMDJ6cGx1NnN3" target="_blank">
-                            <path
-                                d="M27 9.00009C27 7.89552 27.8954 7.00009 29 7.00009C30.1046 7.00009 31 7.89552 31 9.00009C31 10.1047 30.1046 11.0001 29 11.0001C27.8954 11.0001 27 10.1047 27 9.00009Z"
-                                fill="#F9F9F9" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M19 9.50009C13.7533 9.50009 9.5 13.7534 9.5 19.0001C9.5 24.2468 13.7533 28.5001 19 28.5001C24.2467 28.5001 28.5 24.2468 28.5 19.0001C28.5 13.7534 24.2467 9.50009 19 9.50009ZM12.5 19.0001C12.5 15.4102 15.4101 12.5001 19 12.5001C22.5899 12.5001 25.5 15.4102 25.5 19.0001C25.5 22.5899 22.5899 25.5001 19 25.5001C15.4101 25.5001 12.5 22.5899 12.5 19.0001Z"
-                                fill="#F9F9F9" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M29.5165 0.666122C22.5834 -0.108759 15.4167 -0.108759 8.48354 0.666122C4.45943 1.11588 1.21076 4.2859 0.737652 8.33095C-0.0914242 15.4196 -0.0914243 22.5806 0.737652 29.6692C1.21076 33.7143 4.45943 36.8843 8.48354 37.3341C15.4167 38.1089 22.5834 38.1089 29.5165 37.3341C33.5406 36.8843 36.7893 33.7143 37.2624 29.6692C38.0915 22.5806 38.0915 15.4196 37.2624 8.33095C36.7893 4.2859 33.5406 1.11588 29.5165 0.666122ZM8.81676 3.64756C15.5285 2.89743 22.4716 2.89743 29.1833 3.64756C31.8435 3.94488 33.9745 6.0441 34.2827 8.67946C35.0847 15.5365 35.0847 22.4637 34.2827 29.3207C33.9745 31.9561 31.8435 34.0553 29.1833 34.3526C22.4716 35.1027 15.5285 35.1027 8.81676 34.3526C6.15654 34.0553 4.02557 31.9561 3.71734 29.3207C2.91535 22.4637 2.91535 15.5365 3.71734 8.67946C4.02557 6.0441 6.15654 3.94488 8.81676 3.64756Z"
-                                fill="#F9F9F9" />
-                        </a>
-                    </svg>
-                    
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <a href="https://wa.me/35999892834" target="_blank">    
-                            <path
-                                d="M13.7719 10.3397C14.1378 10.3495 14.5435 10.3693 14.9295 11.2261C15.1854 11.7964 15.6166 12.8464 15.9678 13.7017C16.2411 14.3673 16.466 14.915 16.5223 15.0271C16.6509 15.2831 16.73 15.5785 16.5619 15.9231C16.542 15.9638 16.5233 16.0026 16.5053 16.0401C16.3704 16.3201 16.2743 16.5193 16.0475 16.7799C15.9542 16.887 15.857 17.0044 15.7602 17.1214C15.5899 17.3272 15.4207 17.5316 15.2757 17.676C15.0185 17.9319 14.7513 18.2078 15.048 18.7198C15.345 19.2318 16.3838 20.9157 17.9174 22.2747C19.566 23.7425 20.9996 24.361 21.7243 24.6737C21.865 24.7344 21.979 24.7836 22.0626 24.8252C22.5772 25.0812 22.8838 25.0418 23.1806 24.6972C23.4776 24.3524 24.4668 23.2003 24.8132 22.6883C25.1496 22.1763 25.4958 22.2551 25.9708 22.4323C26.4456 22.6095 28.9783 23.8502 29.4927 24.1062C29.5944 24.1569 29.6896 24.2025 29.7777 24.2448C30.1357 24.4164 30.379 24.5331 30.4821 24.707C30.6107 24.9236 30.6107 25.9478 30.1854 27.1491C29.7501 28.3505 27.6526 29.5026 26.7028 29.5912C26.6129 29.5997 26.5234 29.6105 26.4313 29.6217C25.5609 29.727 24.4559 29.8606 20.5193 28.3111C15.6685 26.4036 12.4664 21.6708 11.8191 20.7139C11.768 20.6384 11.7328 20.5864 11.714 20.5612L11.703 20.5465C11.4085 20.1524 9.60657 17.7413 9.60657 15.2537C9.60657 12.8736 10.779 11.6345 11.3138 11.0693C11.3477 11.0335 11.379 11.0004 11.4073 10.9699C11.8821 10.4579 12.4363 10.3299 12.7825 10.3299C13.1289 10.3299 13.4751 10.3299 13.7719 10.3397Z"
-                                fill="#F9F9F9" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.368361 38.6629C0.204727 39.2568 0.745704 39.8051 1.3418 39.6494L10.5565 37.2425C13.4652 38.8181 16.74 39.6551 20.0743 39.6551H20.0841C31.0561 39.6551 40 30.763 40 19.8325C40 14.5347 37.9321 9.55188 34.1726 5.80982C30.4131 2.06793 25.4167 0 20.084 0C9.11215 0 0.168214 8.8921 0.168214 19.8227C0.166967 23.3 1.0848 26.7164 2.82958 29.729L0.368361 38.6629ZM5.72183 30.5258C5.93547 29.7503 5.82875 28.9215 5.42562 28.2255C3.94531 25.6695 3.16716 22.771 3.16822 19.8227C3.16822 10.5632 10.7548 3 20.084 3C24.6238 3 28.8591 4.75397 32.0562 7.93611C35.2497 11.1147 37 15.3322 37 19.8325C37 29.0919 29.4135 36.6551 20.0841 36.6551H20.0743C17.2412 36.6551 14.4573 35.9436 11.9853 34.6046C11.3163 34.2422 10.5345 34.1476 9.79833 34.3399L4.27351 35.783L5.72183 30.5258Z"
-                                fill="#F9F9F9" />
-                        </a>
-                    </svg> 
+            <div class="col-md-4 text-center text-md-end">
+                <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="mailto:jerusinhaz@gmail.com" target="_blank" aria-label="Enviar e-mail">
+                        <i class="fas fa-envelope fa-lg text-pink"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jerusamake"  target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-lg text-pink"></i>
+                    </a>
+                    <a href="https://wa.me/35999892834"  target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp fa-lg text-pink"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="index.js"></script>
+<!-- Scripts -->
+<script src="index.js"></script>
 </body>
-
 </html>
