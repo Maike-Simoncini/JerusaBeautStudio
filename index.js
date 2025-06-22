@@ -1,32 +1,12 @@
-var hamburger = document.querySelector(".hamburger");
-var navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", display);
-
-function display() {
-    hamburger.classList.toggle("active")
-    navMenu.classList.toggle("active")
-}
-
-document.querySelectorAll(".navlink").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active")
-    navMenu.classList.remove("active")
-}))
-
-window.addEventListener("scroll", reveal)
-
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var revealTop = reveals[i].getBoundingClientRect().top;
-        var revealPoint = 150;
-
-        if (revealTop < windowHeight - revealPoint) {
-            reveals[i].classList.add("animate");
+// Scroll reveal com IntersectionObserver
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains("animate")) {
+            entry.target.classList.add("animate");
         }
+    });
+}, {
+    threshold: 0.2
+});
 
-    }
-
-}
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
